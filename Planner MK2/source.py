@@ -101,7 +101,7 @@ def getTodoList():
                 f.close()
             print('todo list cleared')
 
-    with open(filename +'.txt', 'r') as k:
+    with open( filename +'.txt', 'r') as k:
         data = k.read()
         k.close()
     my_todo_list = json.loads(data)
